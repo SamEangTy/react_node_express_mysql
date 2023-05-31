@@ -1,0 +1,19 @@
+.loging-form{
+    margin: auto;
+    border: 1px solid #888;
+    padding: 25px;
+    width: 320px;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+
+.login-form-forgot{
+    text-align: right;
+    margin-top: 10px;
+}
+
+.login-form-button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}

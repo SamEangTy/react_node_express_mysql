@@ -1,0 +1,41 @@
+BaseURL = http://localhost:8080/
+
+# customer 
+    + get-list 
+        - url : api/customer/get-list?page=1&text_search=join 
+        - method : get 
+        - parameter 
+            - query = {
+                text_search : "",
+                page : 1 
+            }
+        - respone = {
+            list : []
+        } 
+
+    + create 
+        - url : api/customer/create 
+        - method : post 
+        - parameter 
+            - body = {
+                "firstname" : "Miss", // not null 
+                "lastname" : "Chanty", // not null 
+                "gender" : 1, // 1/0
+                "username" : "chanty@gmail.com", // not null 
+                "password" : "123456" // not null
+            }
+    + login
+        - url : api/customer/login 
+        - method : post 
+        - parameter 
+            - body = {
+                "username" : "chanty@gmail.com", // not null 
+                "password" : "123456" // not null
+            }
+    + remove
+        - url : api/customer/remove/12
+        - method : delete 
+        - parameter 
+            - params = {
+                id : 
+            }

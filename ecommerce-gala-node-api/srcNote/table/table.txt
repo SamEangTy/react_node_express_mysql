@@ -1,0 +1,123 @@
+
+=== Computer Shop ===
+user 
+    user_id PK
+    firstname 
+    lastname
+    gender
+    username : //tel 
+    password 
+    image
+    status
+    create_at 
+customer
+    customer_id PK
+    firstname 
+    lastname
+    gender
+    email
+    image 
+    username : //tel 
+    password 
+    create_at
+address 
+    address_id PK 
+    customer_id FK
+    province_id FK
+    firstname 
+    lastname
+    tel
+    email
+    address_des
+    create_at
+province
+    province_id
+    name
+    description
+    date_modified
+    create_at
+category
+    category_id PK 
+    name
+    description 
+    parent_id 
+    image
+    order_number
+    create_at
+    create_by 
+product
+    product_id PK
+    category_id FK
+    name
+    barcode 
+    price 
+    quantity
+    image
+    description
+    status
+    create_by
+    create_at
+product_image
+    product_image_id PK 
+    product_id FK
+    image 
+    order_number
+wishlist
+    wishlist_id PK
+    customer_id FK
+    product_id FK 
+    create_at
+cart 
+    cart_id PK 
+    customer_id FK 
+    product_id FK
+    quantity
+    create_at
+order 
+    order_id  PK 
+    customer_id FK 
+
+    firstname 
+    lastname
+    email 
+    tel 
+    province 
+    address_des
+    comment
+
+    total_order 
+    
+    payment_method
+    payment_cod
+    payment_date
+    order_status 
+    create_at
+order_product
+    order_product_id PK 
+    order_id FK 
+    product_id
+    product_name 
+    price 
+    quantity
+    total
+payment_method 
+    payment_method_id
+    name 
+    code 
+    image
+    description
+order_status
+
+        Canceled  Your order has been canceled.
+        Phone denied  We couldn't reach you at the moment! Please contact us back.
+        Delivered  Your order is complete. We hope to see you shopping with us again soon!
+        Preparing order  We're processing your order. We'll SMS you an update when it's ready for delivery/store pickup.
+        Packed  Your order has been packed.
+        Shipped  Get excited! Your order has been shipped!
+        Store pick up  Your order is ready for store pickup!
+        Pending Your order has been placed successfully! Thanks for shopping with ZANDO.
+
+
+
+
+

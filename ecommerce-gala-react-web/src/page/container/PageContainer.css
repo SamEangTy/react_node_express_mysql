@@ -1,0 +1,17 @@
+.pageHeaderContainer{
+    padding: 10px;
+    background-color: beige;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.rowHeader{
+    display: flex;
+    flex-direction: row;
+}
+
+.filterContent{
+    margin-left: 15px;
+}
